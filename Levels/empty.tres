@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Level" load_steps=3 format=3 uid="uid://ck17ll0dotpap"]
+
+[ext_resource type="PackedScene" uid="uid://bdkmxog8qjxrp" path="res://Pieces/Duo.tscn" id="2_ytflj"]
+[ext_resource type="Script" path="res://scripts/Level.gd" id="4_t3npu"]
+
+[resource]
+script = ExtResource("4_t3npu")
+stage_num = 0
+title = "blank"
+score = 0
+scale = 1.0
+Goal = ExtResource("2_ytflj")
+Pices = Array[PackedScene]([])

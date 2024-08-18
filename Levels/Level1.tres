@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Level" load_steps=5 format=3 uid="uid://bton3cxaus743"]
+
+[ext_resource type="PackedScene" uid="uid://dvtoql15tdqkh" path="res://Pieces/Mono.tscn" id="1_3qgui"]
+[ext_resource type="Script" path="res://scripts/Level.gd" id="1_atr12"]
+[ext_resource type="PackedScene" uid="uid://bdkmxog8qjxrp" path="res://Pieces/Duo.tscn" id="2_e1yh0"]
+[ext_resource type="PackedScene" uid="uid://dffep6ah7p31f" path="res://Pieces/Tro1.tscn" id="3_a0u3t"]
+
+[resource]
+script = ExtResource("1_atr12")
+stage_num = 1
+title = "Totorial"
+score = 0
+scale = 1.0
+Goal = ExtResource("3_a0u3t")
+Pices = Array[PackedScene]([ExtResource("2_e1yh0"), ExtResource("1_3qgui")])

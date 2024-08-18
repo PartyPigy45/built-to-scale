@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Level" load_steps=5 format=3 uid="uid://xpwb6nfsqgw8"]
+
+[ext_resource type="PackedScene" uid="uid://dffep6ah7p31f" path="res://Pieces/Tro1.tscn" id="1_k3t8l"]
+[ext_resource type="PackedScene" uid="uid://bdkmxog8qjxrp" path="res://Pieces/Duo.tscn" id="2_n0ef8"]
+[ext_resource type="PackedScene" uid="uid://dvtoql15tdqkh" path="res://Pieces/Mono.tscn" id="3_fxolc"]
+[ext_resource type="Script" path="res://scripts/Level.gd" id="4_ioco4"]
+
+[resource]
+script = ExtResource("4_ioco4")
+stage_num = 2
+title = "wow "
+score = 0
+scale = 1.0
+Goal = ExtResource("1_k3t8l")
+Pices = Array[PackedScene]([ExtResource("2_n0ef8"), ExtResource("3_fxolc"), ExtResource("3_fxolc"), ExtResource("1_k3t8l")])

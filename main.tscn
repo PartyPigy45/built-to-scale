@@ -1,0 +1,117 @@
+[gd_scene load_steps=5 format=3 uid="uid://by6kakb86q4i1"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_phkcv"]
+[ext_resource type="Script" path="res://scripts/level_manager.gd" id="2_bak5q"]
+[ext_resource type="Script" path="res://scripts/UI_manager.gd" id="2_ifq7x"]
+
+[sub_resource type="Theme" id="Theme_sbc62"]
+
+[node name="main" type="Node2D"]
+process_mode = 3
+texture_filter = 1
+script = ExtResource("1_phkcv")
+
+[node name="Level Manager" type="Node2D" parent="."]
+script = ExtResource("2_bak5q")
+levels_path = "res://Levels/"
+stage = 1
+
+[node name="Goal" type="Marker2D" parent="Level Manager"]
+modulate = Color(0.652485, 0, 0.157987, 1)
+position = Vector2(484, 221)
+gizmo_extents = 64.0
+
+[node name="Pieces" type="Node2D" parent="Level Manager"]
+
+[node name="1" type="Marker2D" parent="Level Manager/Pieces"]
+position = Vector2(146, 92)
+gizmo_extents = 40.0
+
+[node name="2" type="Marker2D" parent="Level Manager/Pieces"]
+position = Vector2(898, 95)
+gizmo_extents = 40.0
+
+[node name="3" type="Marker2D" parent="Level Manager/Pieces"]
+position = Vector2(150, 510)
+gizmo_extents = 40.0
+
+[node name="4" type="Marker2D" parent="Level Manager/Pieces"]
+position = Vector2(919, 465)
+gizmo_extents = 40.0
+
+[node name="5" type="Marker2D" parent="Level Manager/Pieces"]
+position = Vector2(132, 320)
+gizmo_extents = 40.0
+
+[node name="6" type="Marker2D" parent="Level Manager/Pieces"]
+position = Vector2(912, 288)
+gizmo_extents = 40.0
+
+[node name="7" type="Marker2D" parent="Level Manager/Pieces"]
+position = Vector2(482, 497)
+gizmo_extents = 40.0
+
+[node name="8" type="Marker2D" parent="Level Manager/Pieces"]
+gizmo_extents = 40.0
+
+[node name="UI" type="CanvasLayer" parent="."]
+process_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="UI"]
+offset_right = 1151.0
+offset_bottom = 647.0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 80
+script = ExtResource("2_ifq7x")
+
+[node name="Pause" type="VBoxContainer" parent="UI/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="Resume" type="Button" parent="UI/MarginContainer/Pause"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Resume"
+
+[node name="Next" type="Button" parent="UI/MarginContainer/Pause"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Next Stage
+"
+
+[node name="Quit" type="Button" parent="UI/MarginContainer/Pause"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Quit to menu"
+
+[node name="VBoxContainer" type="HBoxContainer" parent="UI/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Panel" type="ReferenceRect" parent="UI/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.82
+
+[node name="Label" type="Label" parent="UI/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_sbc62")
+text = "Volume"
+
+[node name="Volume slider" type="HSlider" parent="UI/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+value = 50.0
+
+[connection signal="button_down" from="UI/MarginContainer/Pause/Resume" to="UI/MarginContainer" method="_on_resume_button_down"]
+[connection signal="button_down" from="UI/MarginContainer/Pause/Next" to="UI/MarginContainer" method="_on_resume_button_down"]
+[connection signal="button_down" from="UI/MarginContainer/Pause/Quit" to="UI/MarginContainer" method="_on_quit_button_down"]

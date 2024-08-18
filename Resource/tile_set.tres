@@ -1,0 +1,29 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://18lkj53hlkux"]
+
+[ext_resource type="Texture2D" uid="uid://n37xwnmm3x5l" path="res://assets/hex_grid.png" id="1_lov5m"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8n2ao"]
+texture = ExtResource("1_lov5m")
+margins = Vector2i(0, 10)
+separation = Vector2i(1, 33)
+texture_region_size = Vector2i(127, 94)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-51, 0, -25.5, -47, 25.5, -47, 51, 0, 25.5, 47, -25.5, 47)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-51, 0, -25.5, -47, 25.5, -47, 51, 0, 25.5, 47, -25.5, 47)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-51, 0, -25.5, -47, 25.5, -47, 51, 0, 25.5, 47, -25.5, 47)
+3:0/0 = 0
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-51, 0, -25.5, -47, 25.5, -47, 51, 0, 25.5, 47, -25.5, 47)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-51, 0, -25.5, -47, 25.5, -47, 51, 0, 25.5, 47, -25.5, 47)
+2:1/0 = 0
+3:1/0 = 0
+
+[resource]
+tile_shape = 3
+tile_offset_axis = 1
+tile_size = Vector2i(102, 94)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_8n2ao")
