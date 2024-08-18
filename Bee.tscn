@@ -1,0 +1,243 @@
+[gd_scene load_steps=17 format=3 uid="uid://cttn63orhbtxs"]
+
+[ext_resource type="Texture2D" uid="uid://bcxvnbe10p3j2" path="res://assets/bee wings.png" id="1_31bai"]
+[ext_resource type="Texture2D" uid="uid://ck3vn0cwemn3m" path="res://assets/bee happy.png" id="2_islq2"]
+[ext_resource type="Texture2D" uid="uid://bsfkto6fxm8rx" path="res://assets/bee happy blink.png" id="3_6h8kc"]
+[ext_resource type="Texture2D" uid="uid://dspa3hsjm40nu" path="res://assets/bee anger.png" id="4_t03wi"]
+[ext_resource type="Texture2D" uid="uid://cogmd2hrk2vjb" path="res://assets/bee anger blink.png" id="5_bmt4s"]
+[ext_resource type="Texture2D" uid="uid://c5fep88drb3uf" path="res://assets/bee sad.png" id="6_fpouh"]
+[ext_resource type="Texture2D" uid="uid://bfp6xwksgwfw2" path="res://assets/bee sad blink.png" id="7_qo6qk"]
+
+[sub_resource type="Animation" id="Animation_r1rjq"]
+resource_name = "Flapping Wings"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BeeWing L:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BeeWing R:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BeeWing L:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0.349066, -0.25, 0, 0.25, 0, -0.349066, -0.25, 0, 0.25, 0, 0.349066, -0.25, 0, 0.25, 0, -0.349066, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.2, 0.5, 0.9, 1.3, 1.5)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BeeWing R:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -0.349066, -0.25, 0, 0.25, 0, 0.349066, -0.25, 0, 0.25, 0, -0.349066, -0.25, 0, 0.25, 0, 0.349066, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.2, 0.5, 0.9, 1.3, 1.5)
+}
+
+[sub_resource type="Animation" id="Animation_wsuwi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BeeWing L:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BeeWing R:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BeeWing L:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BeeWing R:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c85ir"]
+_data = {
+"Flapping Wings": SubResource("Animation_r1rjq"),
+"RESET": SubResource("Animation_wsuwi")
+}
+
+[sub_resource type="Animation" id="Animation_jlt0a"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Bee Faces:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_8k8sd"]
+resource_name = "Happy Blinking Bee"
+length = 3.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Bee Faces:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.233333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 0]
+}
+
+[sub_resource type="Animation" id="Animation_bvs22"]
+resource_name = "Angery Blinking Bee"
+length = 3.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Bee Faces:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.233333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [2, 3, 2]
+}
+
+[sub_resource type="Animation" id="Animation_hso31"]
+resource_name = "Sad Blinking Bee"
+length = 3.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Bee Faces:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.366667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [4, 5, 4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bucjd"]
+_data = {
+"Angery Blinking Bee": SubResource("Animation_bvs22"),
+"Happy Blinking Bee": SubResource("Animation_8k8sd"),
+"RESET": SubResource("Animation_jlt0a"),
+"Sad Blinking Bee": SubResource("Animation_hso31")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e8qm8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_islq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6h8kc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_t03wi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bmt4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_fpouh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qo6qk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_c85ir")
+}
+
+[node name="BeeWing R" type="Sprite2D" parent="."]
+position = Vector2(570, 336)
+texture = ExtResource("1_31bai")
+offset = Vector2(109, -61)
+hframes = 2
+frame = 1
+
+[node name="BeeWing L" type="Sprite2D" parent="."]
+position = Vector2(428, 336)
+texture = ExtResource("1_31bai")
+offset = Vector2(-110, -62)
+hframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_bucjd")
+}
+
+[node name="Bee Faces" type="AnimatedSprite2D" parent="."]
+position = Vector2(502, 262)
+sprite_frames = SubResource("SpriteFrames_e8qm8")
