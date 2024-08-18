@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://by6kakb86q4i1"]
+[gd_scene load_steps=6 format=4 uid="uid://by6kakb86q4i1"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_phkcv"]
 [ext_resource type="Script" path="res://scripts/level_manager.gd" id="2_bak5q"]
 [ext_resource type="Script" path="res://scripts/UI_manager.gd" id="2_ifq7x"]
+[ext_resource type="TileSet" uid="uid://18lkj53hlkux" path="res://Resource/tile_set.tres" id="4_54ut3"]
 
 [sub_resource type="Theme" id="Theme_sbc62"]
 
@@ -14,20 +15,18 @@ script = ExtResource("1_phkcv")
 [node name="Level Manager" type="Node2D" parent="."]
 script = ExtResource("2_bak5q")
 levels_path = "res://Levels/"
-stage = 2
 
 [node name="Goal" type="Marker2D" parent="Level Manager"]
-position = Vector2(484, 221)
 gizmo_extents = 64.0
 
 [node name="Pieces" type="Node2D" parent="Level Manager"]
 
 [node name="1" type="Marker2D" parent="Level Manager/Pieces"]
-position = Vector2(146, 92)
+position = Vector2(148, 92)
 gizmo_extents = 40.0
 
 [node name="2" type="Marker2D" parent="Level Manager/Pieces"]
-position = Vector2(898, 95)
+position = Vector2(984, 95)
 gizmo_extents = 40.0
 
 [node name="3" type="Marker2D" parent="Level Manager/Pieces"]
@@ -111,6 +110,14 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 value = 50.0
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+modulate = Color(0.45, 0.45, 0.45, 1)
+z_index = -10
+position = Vector2(-6.36, 6.41)
+scale = Vector2(0.25, 0.25)
+tile_map_data = PackedByteArray("AAABAP//AwAAAAAAAAABAAAAAwAAAAAAAAABAAEAAwAAAAAAAAAAAAIAAwAAAAAAAAD//wIAAwAAAAAAAAAAAAMAAwAAAAAAAAABAAIAAwAAAAAAAAACAAMAAwAAAAAAAAACAAIAAwAAAAAAAAAAAAEAAwAAAAAAAAD//wAAAwAAAAAAAAAAAAAAAwAAAAAAAAACAAAAAwAAAAAAAAADAP//AwAAAAAAAAAEAP//AwAAAAAAAAACAP//AwAAAAAAAAD/////AwAAAAAAAAAEAAAAAwAAAAAAAAAFAP//AwAAAAAAAAAGAP//AwAAAAAAAAAHAP//AwAAAAAAAAAIAAAAAwAAAAAAAAAJAP//AwAAAAAAAAAIAP//AwAAAAAAAAADAAAAAwAAAAAAAAAFAAAAAwAAAAAAAAAGAAAAAwAAAAAAAAAHAAAAAwAAAAAAAAAGAAEAAwAAAAAAAAACAAEAAwAAAAAAAAAEAAEAAwAAAAAAAAAFAAEAAwAAAAAAAAADAAEAAwAAAAAAAAAHAAEAAwAAAAAAAAD//wEAAwAAAAAAAAADAAIAAwAAAAAAAAAEAAIAAwAAAAAAAAAFAAIAAwAAAAAAAAAEAAMAAwAAAAAAAAAGAAMAAwAAAAAAAAAHAAIAAwAAAAAAAAAFAAMAAwAAAAAAAAADAAMAAwAAAAAAAAAIAAMAAwAAAAAAAAAIAAIAAwAAAAAAAAAGAAIAAwAAAAAAAAAIAAEAAwAAAAAAAAAJAAAAAwAAAAAAAAAIAAQAAwAAAAAAAAAHAAMAAwAAAAAAAAAGAAQAAwAAAAAAAAD//wMAAwAAAAAAAAABAAMAAwAAAAAAAAACAAQAAwAAAAAAAAAAAAQAAwAAAAAAAAAEAAQAAwAAAAAAAAAFAAQAAwAAAAAAAAAHAAQAAwAAAAAAAAAAAP//AwAAAAAAAAD+/wAAAwAAAAAAAAD+/wEAAwAAAAAAAAD+/wMAAwAAAAAAAAD+/wIAAwAAAAAAAAAJAAIAAwAAAAAAAAAKAAIAAwAAAAAAAAAKAAEAAwAAAAAAAAAJAAMAAwAAAAAAAAAJAAEAAwAAAAAAAAAJAAQAAwAAAAAAAAD+////AwAAAAAAAAD9////AwAAAAAAAAD9/wAAAwAAAAAAAAABAP7/AwAAAAAAAAAAAP7/AwAAAAAAAAD///7/AwAAAAAAAAD9//7/AwAAAAAAAAADAP7/AwAAAAAAAAD+//7/AwAAAAAAAAACAP7/AwAAAAAAAAAEAP7/AwAAAAAAAAAFAP7/AwAAAAAAAAABAP3/AwAAAAAAAAADAP3/AwAAAAAAAAD///3/AwAAAAAAAAD9//3/AwAAAAAAAAAFAP3/AwAAAAAAAAAGAP7/AwAAAAAAAAAHAP3/AwAAAAAAAAAIAP7/AwAAAAAAAAAJAP3/AwAAAAAAAAAKAP7/AwAAAAAAAAAJAP7/AwAAAAAAAAAKAP//AwAAAAAAAAAHAP7/AwAAAAAAAAAKAAAAAwAAAAAAAAAKAAMAAwAAAAAAAAAKAAQAAwAAAAAAAAADAAQAAwAAAAAAAAABAAQAAwAAAAAAAAD//wQAAwAAAAAAAAD+/wQAAwAAAAAAAAD9/wQAAwAAAAAAAAD9/wMAAwAAAAAAAAD9/wIAAwAAAAAAAAD9/wEAAwAAAAAAAAALAP3/AwAAAAAAAAALAP7/AwAAAAAAAAALAP//AwAAAAAAAAALAAAAAwAAAAAAAAALAAEAAwAAAAAAAAALAAIAAwAAAAAAAAALAAMAAwAAAAAAAAALAAQAAwAAAAAAAAA=")
+tile_set = ExtResource("4_54ut3")
 
 [connection signal="button_down" from="UI/MarginContainer/Pause/Resume" to="UI/MarginContainer" method="_on_resume_button_down"]
 [connection signal="button_down" from="UI/MarginContainer/Pause/Next" to="UI/MarginContainer" method="_on_resume_button_down"]
