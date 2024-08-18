@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c7qr58yjkxkxh"]
+[gd_scene load_steps=20 format=3 uid="uid://cttn63orhbtxs"]
 
 [ext_resource type="Texture2D" uid="uid://bcxvnbe10p3j2" path="res://assets/bee wings.png" id="1_31bai"]
 [ext_resource type="Script" path="res://bee.gd" id="1_kcc44"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://cogmd2hrk2vjb" path="res://assets/bee anger blink.png" id="5_bmt4s"]
 [ext_resource type="Texture2D" uid="uid://c5fep88drb3uf" path="res://assets/bee sad.png" id="6_fpouh"]
 [ext_resource type="Texture2D" uid="uid://bfp6xwksgwfw2" path="res://assets/bee sad blink.png" id="7_qo6qk"]
+[ext_resource type="Texture2D" uid="uid://cvt46q5ptmpw" path="res://assets/bee love n celebration.png" id="9_ioaqa"]
+[ext_resource type="Texture2D" uid="uid://c4amaqhvvr46n" path="res://assets/side ways bee.png" id="10_650aw"]
 
 [sub_resource type="Animation" id="Animation_r1rjq"]
 resource_name = "Flapping Wings"
@@ -209,6 +211,12 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("7_qo6qk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ioaqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_650aw")
 }],
 "loop": true,
 "name": &"default",
@@ -244,7 +252,6 @@ hframes = 2
 libraries = {
 "": SubResource("AnimationLibrary_bucjd")
 }
-autoplay = "Sad Blinking Bee"
 
 [node name="Bee Faces" type="AnimatedSprite2D" parent="."]
 position = Vector2(502, 262)
