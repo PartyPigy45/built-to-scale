@@ -4,6 +4,8 @@
 [ext_resource type="Script" path="res://Pieces/Piece.gd" id="2_0tean"]
 
 [node name="Piece" type="TileMapLayer"]
-tile_map_data = PackedByteArray(0, 0, 255, 255, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+position = Vector2(-154, -85)
+scale = Vector2(0.25, 0.25)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 3, 0, 0, 0, 0, 0, 0, 0)
 tile_set = ExtResource("1_rfscm")
 script = ExtResource("2_0tean")

@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=4 uid="uid://dffep6ah7p31f"]
+[gd_scene load_steps=3 format=3 uid="uid://dffep6ah7p31f"]
 
 [ext_resource type="TileSet" uid="uid://18lkj53hlkux" path="res://Resource/tile_set.tres" id="1_ypa2h"]
 [ext_resource type="Script" path="res://Pieces/Piece.gd" id="2_lpjj6"]
 
 [node name="Piece" type="TileMapLayer"]
-tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAD//wAAAAAAAAEAAAABAP//AAABAAAAAAABAAAAAAABAAAAAAD+/wAAAAABAAAAAAACAAEAAAAAAAAAAAADAAEAAAAAAAAAAAAEAAIAAAAAAAAAAAADAAIAAAAAAAAAAAA=")
+position = Vector2(-154, -85)
+scale = Vector2(0.25, 0.25)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 3, 0, 2, 0, 0, 0, 0, 0, 1, 0, 0, 0, 3, 0, 1, 0, 0, 0, 0, 0)
 tile_set = ExtResource("1_ypa2h")
 script = ExtResource("2_lpjj6")

@@ -41,10 +41,10 @@ func load_stage(stage: Level) -> void:
 
 	#unlode
 	var clear = $Pieces.get_children()
-	#clear.append($Goal)
-	#for i in clear:
-	#	for j in i.get_children():
-	#		j.queue_free()
+	clear.append($Goal)
+	for i in clear:
+		for j in i.get_children():
+			j.queue_free()
 
 	#load
 	$Goal.add_child(stage.Goal.instantiate())
