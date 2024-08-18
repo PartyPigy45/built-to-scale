@@ -1,6 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://c7qr58yjkxkxh"]
+[gd_scene load_steps=18 format=3 uid="uid://c7qr58yjkxkxh"]
 
 [ext_resource type="Texture2D" uid="uid://bcxvnbe10p3j2" path="res://assets/bee wings.png" id="1_31bai"]
+[ext_resource type="Script" path="res://bee.gd" id="1_kcc44"]
 [ext_resource type="Texture2D" uid="uid://ck3vn0cwemn3m" path="res://assets/bee happy.png" id="2_islq2"]
 [ext_resource type="Texture2D" uid="uid://bsfkto6fxm8rx" path="res://assets/bee happy blink.png" id="3_6h8kc"]
 [ext_resource type="Texture2D" uid="uid://dspa3hsjm40nu" path="res://assets/bee anger.png" id="4_t03wi"]
@@ -217,11 +218,14 @@ animations = [{
 [node name="Node2D" type="Node2D"]
 position = Vector2(5.96046e-08, 100)
 scale = Vector2(0.635, 0.635)
+script = ExtResource("1_kcc44")
+emotion = 2
 
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+[node name="Wings" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_c85ir")
 }
+autoplay = "Flapping Wings"
 
 [node name="BeeWing R" type="Sprite2D" parent="."]
 position = Vector2(570, 336)
@@ -236,10 +240,11 @@ texture = ExtResource("1_31bai")
 offset = Vector2(-110, -62)
 hframes = 2
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="Face" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_bucjd")
 }
+autoplay = "Sad Blinking Bee"
 
 [node name="Bee Faces" type="AnimatedSprite2D" parent="."]
 position = Vector2(502, 262)

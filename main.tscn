@@ -14,10 +14,9 @@ script = ExtResource("1_phkcv")
 [node name="Level Manager" type="Node2D" parent="."]
 script = ExtResource("2_bak5q")
 levels_path = "res://Levels/"
-stage = 1
+stage = 2
 
 [node name="Goal" type="Marker2D" parent="Level Manager"]
-modulate = Color(0.652485, 0, 0.157987, 1)
 position = Vector2(484, 221)
 gizmo_extents = 64.0
 

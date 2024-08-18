@@ -56,8 +56,7 @@ func load_stage(stage: Level) -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	stage = 1
-	load_stage(all_levels[0])
+	load_stage(all_levels[stage])
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
