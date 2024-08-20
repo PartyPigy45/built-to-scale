@@ -1,0 +1,66 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1724136382
+bee.gd::GDScript::-1::1723994135::0::1::::<>Node2D<>::
+Bee.tscn::PackedScene::6146498747415853444::1724136293::0::1::::<><>::uid://bcxvnbe10p3j2::::res://assets/bee wings.png<>res://bee.gd<>uid://ck3vn0cwemn3m::::res://assets/bee happy.png<>uid://bsfkto6fxm8rx::::res://assets/bee happy blink.png<>uid://dspa3hsjm40nu::::res://assets/bee anger.png<>uid://cogmd2hrk2vjb::::res://assets/bee anger blink.png<>uid://c5fep88drb3uf::::res://assets/bee sad.png<>uid://bfp6xwksgwfw2::::res://assets/bee sad blink.png<>uid://cvt46q5ptmpw::::res://assets/bee love n celebration.png<>uid://c4amaqhvvr46n::::res://assets/side ways bee.png
+crt.gdshader::Shader::-1::1724136293::0::1::::<><>::
+icon.svg::CompressedTexture2D::6547900682896307043::1723829444::1723829448::1::::<><>::
+main.tscn::PackedScene::4135556339629159918::1724136293::0::1::::<><>::res://scripts/main.gd<>res://scripts/level_manager.gd<>res://scripts/UI_manager.gd<>uid://18lkj53hlkux::::res://Resource/tile_set.tres
+README.md::TextFile::-1::1723828264::0::1::::<><>::
+shimmer.gdshader::Shader::-1::1723833337::0::1::::<><>::
+::res://assets/::1724015977
+4 sides template.png::CompressedTexture2D::3999957533457601685::1723832424::1723832431::1::::<><>::
+bee anger blink.png::CompressedTexture2D::5768606835868862559::1723992090::1723992113::1::::<><>::
+bee anger.png::CompressedTexture2D::8453677301000174330::1723992090::1723992113::1::::<><>::
+bee happy blink.png::CompressedTexture2D::3660783641434102669::1723992090::1723992113::1::::<><>::
+bee happy.png::CompressedTexture2D::5533831970227833816::1723992090::1723992113::1::::<><>::
+bee love n celebration.png::CompressedTexture2D::184936685321718924::1724015746::1724015977::1::::<><>::
+bee sad blink.png::CompressedTexture2D::2770255040018206827::1723992090::1723992113::1::::<><>::
+bee sad.png::CompressedTexture2D::6889100004585308629::1723992090::1723992113::1::::<><>::
+bee sleepy.png::CompressedTexture2D::992430426841454052::1723992090::1723992113::1::::<><>::
+bee wings.png::CompressedTexture2D::2575577391399319557::1723992090::1723992113::1::::<><>::
+crt.tres::ShaderMaterial::2426911484974076752::1723833271::0::1::::<><>::res://crt.gdshader
+hex_grid.png::CompressedTexture2D::972242737594984003::1723893111::1723893118::1::::<><>::
+hunny comb-sheet.png::CompressedTexture2D::7139594310965244561::1723991401::1723991426::1::::<><>::
+hunny comb.png::CompressedTexture2D::2118496456821970425::1723985880::1723985903::1::::<><>::
+side ways bee.png::CompressedTexture2D::6809047288972481751::1724015746::1724015977::1::::<><>::
+::res://assets/assets/::1723991425
+bee anger blink.png::CompressedTexture2D::3842906487657389900::1723982492::1723991424::1::::<><>::
+bee anger.png::CompressedTexture2D::67118958503216259::1723982434::1723991424::1::::<><>::
+bee happy blink.png::CompressedTexture2D::4640706071058415903::1723975920::1723991424::1::::<><>::
+bee happy.png::CompressedTexture2D::3337529064586408056::1723975745::1723991424::1::::<><>::
+bee love n celebration.png::CompressedTexture2D::7027110599325390358::1723983846::1723991424::1::::<><>::
+bee sad blink.png::CompressedTexture2D::8584486209281406253::1723982842::1723991424::1::::<><>::
+bee sad.png::CompressedTexture2D::3846531781219789646::1723982761::1723991424::1::::<><>::
+bee sleepy.png::CompressedTexture2D::4127178402173768554::1723983399::1723991425::1::::<><>::
+bee wings.png::CompressedTexture2D::1752801782536337301::1723975559::1723991424::1::::<><>::
+hunny comb blue full.png::CompressedTexture2D::1854485693775131693::1723989618::1723991424::1::::<><>::
+hunny comb blue half full.png::CompressedTexture2D::2743219892782399463::1723989131::1723991424::1::::<><>::
+hunny comb blue.png::CompressedTexture2D::5089943515661450728::1723988880::1723991424::1::::<><>::
+hunny comb full.png::CompressedTexture2D::8443717862426260947::1723990216::1723991424::1::::<><>::
+hunny comb green full.png::CompressedTexture2D::469042451253935804::1723989634::1723991424::1::::<><>::
+hunny comb green half full.png::CompressedTexture2D::8306338422396754258::1723989166::1723991424::1::::<><>::
+hunny comb green.png::CompressedTexture2D::2749767262833398120::1723988833::1723991424::1::::<><>::
+hunny comb half full.png::CompressedTexture2D::7327148477809545621::1723990067::1723991424::1::::<><>::
+hunny comb pink full.png::CompressedTexture2D::6987923705570282133::1723991116::1723991424::1::::<><>::
+hunny comb pink hlaf full.png::CompressedTexture2D::4033907738424256480::1723989190::1723991424::1::::<><>::
+hunny comb pink.png::CompressedTexture2D::1130730934288998445::1723988721::1723991424::1::::<><>::
+hunny comb purple full.png::CompressedTexture2D::4532518851249959115::1723989835::1723991424::1::::<><>::
+hunny comb purple half full.png::CompressedTexture2D::3747115141866043184::1723989112::1723991424::1::::<><>::
+hunny comb purple.png::CompressedTexture2D::4261707040159863321::1723988958::1723991424::1::::<><>::
+hunny comb.png::CompressedTexture2D::8582763641734379375::1723985685::1723991424::1::::<><>::
+::res://Levels/::1724136293
+empty.tres::Resource/Level::5530366829406301923::1724136293::0::1::::<><>::uid://bdkmxog8qjxrp::::res://Pieces/Duo.tscn<>res://scripts/Level.gd
+Level1.tres::Resource/Level::3749749465112528390::1724136293::0::1::::<><>::uid://dvtoql15tdqkh::::res://Pieces/Mono.tscn<>res://scripts/Level.gd<>uid://bdkmxog8qjxrp::::res://Pieces/Duo.tscn
+Level2.tres::Resource/Level::1646648278178588197::1724136293::0::1::::<><>::uid://bisirjkoo7jhr::::res://Pieces/Tro.tscn<>uid://bdkmxog8qjxrp::::res://Pieces/Duo.tscn<>uid://dvtoql15tdqkh::::res://Pieces/Mono.tscn<>res://scripts/Level.gd
+::res://Pieces/::1724136293
+Duo.tscn::PackedScene::2618401415437665941::1724136293::0::1::::<><>::uid://18lkj53hlkux::::res://Resource/tile_set.tres<>res://Pieces/Piece.gd
+Mono.tscn::PackedScene::8673330174716684067::1724136293::0::1::::<><>::uid://18lkj53hlkux::::res://Resource/tile_set.tres<>res://Pieces/Piece.gd
+Piece.gd::GDScript::-1::1724135854::0::1::::Piece<>TileMapLayer<>::
+Tro.tscn::PackedScene::2985606815623219523::1724136293::0::1::::<><>::uid://18lkj53hlkux::::res://Resource/tile_set.tres<>res://Pieces/Piece.gd<>uid://cttn63orhbtxs::::res://Bee.tscn
+::res://Resource/::1724136293
+tile_set.tres::TileSet::1893720665668569263::1724136293::0::1::::<><>::uid://c8yqcs6og3kmr::::res://assets/hunny comb-sheet.png
+::res://scripts/::1724096652
+Level.gd::GDScript::-1::1724096415::0::1::::Level<>Resource<>::
+level_manager.gd::GDScript::-1::1724096652::0::1::::<>Node2D<>::
+main.gd::GDScript::-1::1724096415::0::1::::<>Node2D<>::
+UI_manager.gd::GDScript::-1::1724096473::0::1::::<>MarginContainer<>::

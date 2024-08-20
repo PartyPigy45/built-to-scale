@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkc25d3uh4los"]
+
+[ext_resource type="PackedScene" uid="uid://bisirjkoo7jhr" path="res://Pieces/Tro.tscn" id="1_6piif"]
+
+[node name="Stage1" type="Node2D"]
+
+[node name="Piece" parent="." instance=ExtResource("1_6piif")]

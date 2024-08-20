@@ -35,7 +35,7 @@ func load_all_levles() -> void:
 	folder.list_dir_end()
 	print(all_levels)
 
-func load_stage(stage: Level) -> void:
+func load_stage(current_stage: Level) -> void:
 	if $Goal == null:
 		return
 
@@ -43,16 +43,11 @@ func load_stage(stage: Level) -> void:
 	var clear = $Pieces.get_children()
 	clear.append($Goal)
 	for i in clear:
-		for j in i.get_children():
-			j.queue_free()
+		i.queue_free()
 
 	#load
-	$Goal.add_child(stage.Goal.instantiate())
-	var index: int = 0
-	var positions = $Pieces.get_children()
-	for i in stage.Pices:
-		positions[index].add_child(i.instantiate())
-		index += 1
+	$Goal.add_child(current_stage.stage.instantiate())
+	
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -60,5 +55,5 @@ func _ready() -> void:
 	load_stage(all_levels[stage])
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass

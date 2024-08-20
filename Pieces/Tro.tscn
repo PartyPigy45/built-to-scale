@@ -2,7 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://18lkj53hlkux" path="res://Resource/tile_set.tres" id="1_3crgu"]
 [ext_resource type="Script" path="res://Pieces/Piece.gd" id="2_rsd35"]
-[ext_resource type="PackedScene" uid="uid://c7qr58yjkxkxh" path="res://Bee.tscn" id="3_71w1x"]
+[ext_resource type="PackedScene" uid="uid://cttn63orhbtxs" path="res://Bee.tscn" id="3_71w1x"]
 
 [node name="Piece" type="TileMapLayer"]
 position = Vector2(-154, -85)
@@ -13,3 +13,12 @@ script = ExtResource("2_rsd35")
 
 [node name="Node2D" parent="." instance=ExtResource("3_71w1x")]
 position = Vector2(43.9999, 244)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(160, 12, 556, 12, 736, -336, 1104, -328, 1268, 8, 1128, 308, 1296, 688, 1112, 1020, 744, 996, 556, 664, 176, 660, 20, 340)
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

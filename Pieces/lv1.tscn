@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=4 uid="uid://d1f7rv8av31u0"]
+
+[ext_resource type="TileSet" uid="uid://18lkj53hlkux" path="res://Resource/tile_set.tres" id="1_vff0s"]
+[ext_resource type="Script" path="res://Pieces/Piece.gd" id="2_yydv1"]
+
+[node name="Piece" type="TileMapLayer"]
+scale = Vector2(0.25, 0.25)
+tile_map_data = PackedByteArray("AAAAAAAAAwAAAAAAAAD//wAAAwAAAAAAAAABAAAAAwAAAAAAAAAAAAEAAwAAAAAAAAABAP//AwAAAAAAAAAAAP//AwAAAAAAAAD/////AwAAAAAAAAA=")
+tile_set = ExtResource("1_vff0s")
+script = ExtResource("2_yydv1")
+
+[node name="1" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="1"]
+polygon = PackedVector2Array(-552, -8, -376, -336, -20, -344, 196, -676, 552, -672, 736, -340, 1120, -324, 1280, -4, 1120, 328, 1288, 676, 1116, 1016, 748, 1016, 552, 1336, 196, 1336, 4, 1016, -364, 1000, -548, 668, -364, 328)
